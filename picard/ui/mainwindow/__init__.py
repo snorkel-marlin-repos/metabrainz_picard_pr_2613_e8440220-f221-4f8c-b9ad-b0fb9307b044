@@ -177,7 +177,7 @@ class MainWindow(QtWidgets.QMainWindow, PreserveGeometry):
         if DesktopStatusIndicator:
             self.ready_for_display.connect(self._setup_desktop_status_indicator)
         if not disable_player:
-            from picard.ui.player import Player
+            from picard.ui.playertoolbar import Player
             player = Player(self)
             if player.available:
                 self.player = player
